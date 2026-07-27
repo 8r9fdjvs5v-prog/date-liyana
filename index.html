@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notre Date ❤️</title>
+
+<style>
+
+body{
+background:#ffe6f2;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+overflow:hidden;
+}
+
+h1{
+font-size:40px;
+text-align:center;
+}
+
+button{
+padding:15px 35px;
+font-size:22px;
+margin:15px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+}
+
+#oui{
+background:#4CAF50;
+color:white;
+}
+
+#non{
+background:#ff4d4d;
+color:white;
+position:absolute;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>❤️ Ça te dit un date avec moi ? ❤️</h1>
+
+<button id="oui" onclick="window.location.href='date.html'">Oui ❤️</button>
+
+<button id="non">Non 😢</button>
+
+<script>
+
+const non=document.getElementById("non");
+
+non.addEventListener("mouseover",()=>{
+
+non.style.left=Math.random()*(window.innerWidth-120)+"px";
+non.style.top=Math.random()*(window.innerHeight-70)+"px";
+
+});
+
+</script>
+
+</body>
+</html>
